@@ -1,9 +1,9 @@
 <?php
 
-namespace Ghi\Http\Middleware;
+namespace Ghi\LaravelObraContext\Middleware;
 
 use Closure;
-use Flash;
+use Laracasts\Flash\Flash;
 use Ghi\Core\Contracts\Context;
 use Illuminate\Contracts\Config\Repository;
 use Redirect;
