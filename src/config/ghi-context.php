@@ -11,6 +11,16 @@ return [
     |
     */
    
-    'redirect-path': '/',
+    'redirect-path' => '/',
 
+    /*
+    |--------------------------------------------------------------------------
+    | Vista de obra composer
+    |--------------------------------------------------------------------------
+    |
+    | Vista donde se inyectara la obra que esta en el contexto actual
+    |
+    */
+   
+    'view-composer' => 'partials.nav',
 ];
