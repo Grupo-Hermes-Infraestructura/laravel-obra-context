@@ -1,6 +1,6 @@
 <?php
 
-namespace Ghi\Http\Controllers;
+namespace Ghi\LaravelObraContext\Controllers;
 
 use Ghi\Core\Contracts\Context;
 

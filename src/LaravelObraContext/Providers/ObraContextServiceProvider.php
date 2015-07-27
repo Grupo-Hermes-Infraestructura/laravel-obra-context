@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelObraContext\Providers;
+namespace Ghi\LaravelObraContext\Providers;
 
 use View;
 use Illuminate\Support\ServiceProvider;
@@ -31,8 +31,7 @@ class ObraContextServiceProvider extends ServiceProvider
         ], 'views');
 
         $this->publishes([
-            __DIR__.'/../assets/company-icon.png' => public_path('img'),
-            __DIR__.'/../assets/favicon.ico' => public_path(),
+            __DIR__.'/../assets' => public_path('img'),
         ], 'public');
     }
 

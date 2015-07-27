@@ -1,11 +1,11 @@
 <?php
 
-namespace Ghi\Http\Controllers;
+namespace Ghi\LaravelObraContext\Controllers;
 
 use Auth;
 use Ghi\Core\Contracts\UserRepository;
 
-class PagesController extends Controller
+class ObrasController extends Controller
 {
     /**
      *
@@ -16,26 +16,16 @@ class PagesController extends Controller
     }
 
     /**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function home()
-	{
-		return view('pages.home');
-	}
-
-    /**
      * Muestra una lista de obras asociadas con el usuario
      *
      * @param UserRepository $repository
      * @return \Illuminate\View\View
      */
-    public function obras(UserRepository $repository)
+    public function index(UserRepository $repository)
     {
         $obras = $repository->getObras(auth()->id());
         $obras->setPath('obras');
 
-        return view('pages.obras')->withObras($obras);
+        return view('ghi::obras')->withObras($obras);
     }
 }
