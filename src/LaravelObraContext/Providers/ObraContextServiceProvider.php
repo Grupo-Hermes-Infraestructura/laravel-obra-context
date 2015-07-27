@@ -36,7 +36,7 @@ class ObraContextServiceProvider extends ServiceProvider
         ], 'public');
 
         $this->publishes([
-            __DIR__.'/../../config/context.php' => config_path('ghi-context.php'),
+            __DIR__.'/../../config/ghi-context.php' => config_path('ghi-context.php'),
         ]);
     }
 

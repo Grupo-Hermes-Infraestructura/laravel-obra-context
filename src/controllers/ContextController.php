@@ -35,6 +35,6 @@ class ContextController extends Controller
 
         $this->context->setDatabaseName($databaseName);
 
-        return redirect()->route(config('context.redirect-path', '/'));
+        return redirect()->to(config('context.redirect-path', '/'));
     }
 }
