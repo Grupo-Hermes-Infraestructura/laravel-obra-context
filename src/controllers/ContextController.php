@@ -1,7 +1,8 @@
 <?php
 
-namespace Ghi\LaravelObraContext\Controllers;
+namespace Ghi\LaravelObraContext;
 
+use Illuminate\Routing\Controller;
 use Ghi\Core\Contracts\Context;
 
 class ContextController extends Controller

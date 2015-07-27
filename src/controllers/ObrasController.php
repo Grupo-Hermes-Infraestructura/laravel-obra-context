@@ -1,8 +1,9 @@
 <?php
 
-namespace Ghi\LaravelObraContext\Controllers;
+namespace Ghi\LaravelObraContext;
 
 use Auth;
+use Illuminate\Routing\Controller;
 use Ghi\Core\Contracts\UserRepository;
 
 class ObrasController extends Controller
