@@ -24,14 +24,14 @@ class ObraContextServiceProvider extends ServiceProvider
     {
         $this->bindContext();
 
-        $this->loadViewsFrom(__DIR__ . '/../views', 'ghi');
+        $this->loadViewsFrom(__DIR__ . '/../../views', 'ghi');
 
         $this->publishes([
-            __DIR__ . '/../views' => base_path('resources/views/vendor/ghi')
+            __DIR__ . '/../../views' => base_path('resources/views/vendor/ghi')
         ], 'views');
 
         $this->publishes([
-            __DIR__.'/../assets' => public_path('img'),
+            __DIR__.'/../../assets' => public_path('img'),
         ], 'public');
     }
 
