@@ -1,6 +1,6 @@
 <?php
 
-namespace Ghi\Http\Composers;
+namespace Ghi\LaravelObraContext\Composers;
 
 use Ghi\Core\Contracts\Context;
 use Ghi\Core\Contracts\ObraRepository;
@@ -24,7 +24,7 @@ class ObraComposer
      */
     public function __construct(Context $context, ObraRepository $repository)
     {
-        $this->context = $context;
+        $this->context    = $context;
         $this->repository = $repository;
     }
 

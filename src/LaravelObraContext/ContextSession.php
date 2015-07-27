@@ -1,9 +1,9 @@
 <?php
 
-namespace Ghi\Domain\Core;
+namespace Ghi\LaravelObraContext;
 
 use Ghi\Core\Contracts\Context;
-use Ghi\Domain\Core\Obras\Obra;
+use Ghi\Core\Models\Obra;
 use Illuminate\Session\Store;
 
 class ContextSession implements Context
