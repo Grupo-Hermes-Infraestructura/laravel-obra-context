@@ -27,6 +27,6 @@ class ObrasController extends Controller
         $obras = $repository->getObras(auth()->id());
         $obras->setPath('obras');
 
-        return view('ghi::obras')->withObras($obras);
+        return view('obras.index')->withObras($obras);
     }
 }

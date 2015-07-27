@@ -12,7 +12,7 @@ class ObraContextServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('partials.nav', \Ghi\LaravelObraContext\Composers\ObraComposer::class);
+        View::composer('ghi::nav-obras', \Ghi\LaravelObraContext\Composers\ObraComposer::class);
     }
 
     /**
@@ -31,8 +31,13 @@ class ObraContextServiceProvider extends ServiceProvider
         ], 'views');
 
         $this->publishes([
-            __DIR__.'/../../assets' => public_path('img'),
+            __DIR__.'/../../assets/company-icon.png' => public_path('img'),
+            __DIR__.'/../../assets/favicon.ico' => public_path(),
         ], 'public');
+
+        $this->publishes([
+            __DIR__.'/../../config/context.php' => config_path('ghi-context.php'),
+        ]);
     }
 
     /**

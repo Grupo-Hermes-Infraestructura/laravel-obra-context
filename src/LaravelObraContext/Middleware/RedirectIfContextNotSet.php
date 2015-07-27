@@ -49,7 +49,7 @@ class RedirectIfContextNotSet
         if ($this->context->notEstablished()) {
             Flash::error('Lo sentimos, debe seleccionar una obra para ver esta información!');
 
-            return redirect()->guest(route('pages.obras'));
+            return redirect()->guest(route('obras.index'));
         }
 
         $this->setContext();
